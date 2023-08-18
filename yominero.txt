@@ -1,0 +1,32 @@
+
+
+
+   sudo apt-get update
+
+
+
+   sudo apt-get install git automake autoconf libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev
+
+
+   sudo apt-get install git
+
+
+
+   git clone https://github.com/tpruvot/cpuminer-multi.git
+
+
+
+   cd cpuminer-multi
+
+
+
+  sudo ./autogen.sh
+
+  sudo ./configure
+
+
+  sudo ./build.sh
+
+
+
+   ./cpuminer -u 14eDRsYgJ6eN7Y5qSyfDA24uN771VSb57y -p geo -a sha256d -o stratum+tcp://solo.ckpool.org:3333
